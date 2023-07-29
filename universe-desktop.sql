@@ -2,7 +2,7 @@ CREATE DATABASE universe;
 
 CREATE TYPE shape AS ENUM ('round','spiral','elliptical','irregular','quasar','barred spiral');
 
-CREATE TABLE galaxy(galaxy_id PRIMARY KEY generated always as identity,
+CREATE TABLE galaxy(galaxy_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 name VARCHAR(50) UNIQUE NOT NULL,
 galaxy_shape shape,
 description TEXT,
@@ -10,7 +10,7 @@ age_in_millions_of_years INT NOT NULL,
 distance_from_earth NUMERIC(10,3)
 );
 
-CREATE TABLE star(star_id PRIMARY KEY generated always as identity,
+CREATE TABLE star(star_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
@@ -25,7 +25,7 @@ CONSTRAINT fk_galaxy_id
 );
 
 
-CREATE TABLE planet(planet_id PRIMARY KEY generated always as identity,
+CREATE TABLE planet(planet_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
@@ -39,7 +39,7 @@ CONSTRAINT fk_star_id
 );
 
 
-CREATE TABLE moon(moon_id PRIMARY KEY generated always as identity generated always as identity,
+CREATE TABLE moon(moon_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
@@ -53,7 +53,6 @@ CONSTRAINT fk_planet_id
 );
 
 CREATE TABLE galaxy_stars(galaxy_stars_id INT UNIQUE NOT NULL PRIMARY KEY, star_id INT NOT NULL, name VARCHAR(50) );
-
 
 -- add data
 -- add galaxy, star, planet, moon
