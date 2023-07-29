@@ -74,18 +74,18 @@ INSERT INTO star (name, description, age_in_millions_of_years, is_spherical, gal
 
 
 INSERT INTO planet (name, description, age_in_millions_of_years, has_life, star_id) VALUES
-('Mercury','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth''s Moon.',1340,FALSE,7),
-('Earth','Planet Earth',1340,TRUE,7),
-('Mars','Mars the red planet',1340,TRUE,7),
-('Jupiter','The biggest planet in the Milky Way. Juno Orbiter is exlporing.',1340,FALSE,7),
-('Saturn','Second largest planet made mostly of hydrogen and helium.',1340,FALSE,7),
-('Uranus','Third larges and seventh from the sun.',1340,FALSE,7),
-('Neptune','An ice giant and the most distant planet',134,FALSE,7),
-('Pluto','This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows – but the snow is red.',1340,FALSE,7),
-('Ceres','Ceres is named for the Roman goddess of corn and harvests. The word cereal comes from the same name.',1340,FALSE,7),
-('Andares','The Andararean homeworld in the Andromeda Galaxy.',1510,TRUE,8),
-('Andares 2','The Andararean settlment in the Andromeda Galaxy.',1810,TRUE,8),
-('HookandLine','Perseus I settlement world.',1270,FALSE,9);
+('Mercury','The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth''s Moon.',1340,FALSE,1),
+('Earth','Planet Earth',1340,TRUE,1),
+('Mars','Mars the red planet',1340,TRUE,1),
+('Jupiter','The biggest planet in the Milky Way. Juno Orbiter is exlporing.',1340,FALSE,1),
+('Saturn','Second largest planet made mostly of hydrogen and helium.',1340,FALSE,1),
+('Uranus','Third larges and seventh from the sun.',1340,FALSE,1),
+('Neptune','An ice giant and the most distant planet',134,FALSE,1),
+('Pluto','This fascinating world has blue skies, spinning moons, mountains as high as the Rockies, and it snows – but the snow is red.',1340,FALSE,1),
+('Ceres','Ceres is named for the Roman goddess of corn and harvests. The word cereal comes from the same name.',1340,FALSE,1),
+('Andares','The Andararean homeworld in the Andromeda Galaxy.',1510,TRUE,2),
+('Andares 2','The Andararean settlment in the Andromeda Galaxy.',1810,TRUE,2),
+('HookandLine','Perseus I settlement world.',1270,FALSE,3);
 
 
 INSERT INTO moon (name, description, age_in_millions_of_years,has_life, planet_id) VALUES 
