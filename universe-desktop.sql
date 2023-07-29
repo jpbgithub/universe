@@ -89,27 +89,27 @@ INSERT INTO planet (name, description, age_in_millions_of_years, has_life, star_
 
 
 INSERT INTO moon (name, description, age_in_millions_of_years,has_life, planet_id) VALUES 
-('Earth Moon','Earths Moon',1340, TRUE,26),
-('Phobe','Mars first moon',1340, FALSE,27),
-('Io','Jupiters volcanically active moon with lava erupting kilomters high.',1340, FALSE,28),
-('Europa','Jupiters iron core moon with an ocean of salty water.',1340, TRUE,28),
-('Ganymede','Jupiters largest moon',1340, TRUE,28),
-('Callisto','Jupiters most cratered moon.',1340, FALSE,28),
-('Titan','Saturns largest moon. Has water.',1340, FALSE,29),
-('Mimas','Saturns Deathstar like moon. May have water.',1340, FALSE,29),
-('Tethys','Saturns moon with red mountains',1340, FALSE,29),
-('Ariel','Uranus first moon',1340, TRUE,30),
-('Belinda','Uranus second moon',1340, TRUE,30),
-('Bianca','Uranus third moon',1340, TRUE,30),
-('Caliban','Uranus fourth moon',1340, TRUE,30),
-('Despina','Neptunes first moon',1340, TRUE,31),
-('Galatea','Neptunes second moon',1340, TRUE,31),
-('Hallimede','Neptunes third moon',1340, TRUE,31),
-('Hippocamp','Neptunes fourth moon',1340, TRUE,31),
-('Laomedeia','Neptunes fifth moon',1340, TRUE,31),
-('Larissa','Neptunes sixth moon',1340, TRUE,31),
-('Naiad','Neptunes seventh moon',1340, TRUE,31),
-('Nereid','Neptunes eighth moon',1340, TRUE,31);
+('Earth Moon','Earths Moon',1340, TRUE,2),
+('Phobe','Mars first moon',1340, FALSE,3),
+('Io','Jupiters volcanically active moon with lava erupting kilomters high.',1340, FALSE,4),
+('Europa','Jupiters iron core moon with an ocean of salty water.',1340, TRUE,4),
+('Ganymede','Jupiters largest moon',1340, TRUE,4),
+('Callisto','Jupiters most cratered moon.',1340, FALSE,4),
+('Titan','Saturns largest moon. Has water.',1340, FALSE,5),
+('Mimas','Saturns Deathstar like moon. May have water.',1340, FALSE,5),
+('Tethys','Saturns moon with red mountains',1340, FALSE,5),
+('Ariel','Uranus first moon',1340, TRUE,6),
+('Belinda','Uranus second moon',1340, TRUE,6),
+('Bianca','Uranus third moon',1340, TRUE,6),
+('Caliban','Uranus fourth moon',1340, TRUE,6),
+('Despina','Neptunes first moon',1340, TRUE,7),
+('Galatea','Neptunes second moon',1340, TRUE,7),
+('Hallimede','Neptunes third moon',1340, TRUE,7),
+('Hippocamp','Neptunes fourth moon',1340, TRUE,7),
+('Laomedeia','Neptunes fifth moon',1340, TRUE,7),
+('Larissa','Neptunes sixth moon',1340, TRUE,7),
+('Naiad','Neptunes seventh moon',1340, TRUE,7),
+('Nereid','Neptunes eighth moon',1340, TRUE,7);
 
 
 INSERT INTO galaxy_stars(galaxy_stars_id, star_id) VALUES 
