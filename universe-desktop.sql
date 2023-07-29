@@ -113,12 +113,12 @@ INSERT INTO moon (name, description, age_in_millions_of_years,has_life, planet_i
 
 
 INSERT INTO galaxy_stars(galaxy_stars_id, star_id) VALUES 
-(1,7),
-(2,8),
-(3,9),
-(4,10),
-(5,11),
-(6,12);
+(1,1),
+(2,2),
+(3,3),
+(4,4),
+(5,5),
+(6,6);
 
 
 
