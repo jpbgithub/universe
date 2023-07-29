@@ -2,7 +2,7 @@ CREATE DATABASE universe;
 
 CREATE TYPE shape AS ENUM ('round','spiral','elliptical','irregular','quasar','barred spiral');
 
-CREATE TABLE galaxy(galaxy_id SERIAL PRIMARY KEY,
+CREATE TABLE galaxy(galaxy_id PRIMARY KEY generated always as identity,
 name VARCHAR(50) UNIQUE NOT NULL,
 galaxy_shape shape,
 description TEXT,
@@ -10,7 +10,7 @@ age_in_millions_of_years INT NOT NULL,
 distance_from_earth NUMERIC(10,3)
 );
 
-CREATE TABLE star(star_id SERIAL PRIMARY KEY,
+CREATE TABLE star(star_id PRIMARY KEY generated always as identity,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
@@ -25,7 +25,7 @@ CONSTRAINT fk_galaxy_id
 );
 
 
-CREATE TABLE planet(planet_id SERIAL PRIMARY KEY,
+CREATE TABLE planet(planet_id PRIMARY KEY generated always as identity,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
@@ -39,7 +39,7 @@ CONSTRAINT fk_star_id
 );
 
 
-CREATE TABLE moon(moon_id SERIAL PRIMARY KEY,
+CREATE TABLE moon(moon_id PRIMARY KEY generated always as identity generated always as identity,
 name VARCHAR(50) UNIQUE NOT NULL,
 description TEXT,
 age_in_millions_of_years INT NOT NULL,
