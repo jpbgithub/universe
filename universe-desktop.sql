@@ -70,7 +70,7 @@ INSERT INTO star (name, description, age_in_millions_of_years, is_spherical, gal
 ('Coma Sun', 'Coma Berenices Dwarf Sun', 1270, TRUE, 3),
 ('Balken Brightview', 'Pisces Overdensity', 1290, TRUE, 4),
 ('Andromeda Overdrive','Andromeda Galaxy (M31) Sun', 1490, TRUE, 4),
-('Fisherman Sun','Perseus I (Andromeda XXXIII)',1250, TRUE, 5;
+('Fisherman Sun','Perseus I (Andromeda XXXIII)',1250, TRUE, 5);
 
 
 INSERT INTO planet (name, description, age_in_millions_of_years, has_life, star_id) VALUES
